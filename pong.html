@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pong | Weather Dashboard</title>
+  <link rel="stylesheet" href="pong.css">
+</head>
+<body>
+  <main class="game-shell">
+    <a class="back-link" href="index.html">← Back to Weather Dashboard</a>
+    <section class="game-card" aria-labelledby="game-title">
+      <div class="game-header">
+        <div>
+          <p class="eyebrow">Arcade break</p>
+          <h1 id="game-title">Pong</h1>
+          <p class="instructions">Move with <kbd>↑</kbd> <kbd>↓</kbd> or your mouse. First to 7 wins.</p>
+        </div>
+        <div class="scoreboard" aria-label="Scoreboard">
+          <div><span class="score-label">You</span><strong id="playerScore">0</strong></div>
+          <span class="score-divider">:</span>
+          <div><span class="score-label">Computer</span><strong id="computerScore">0</strong></div>
+        </div>
+      </div>
+
+      <canvas id="pongCanvas" width="900" height="500" aria-label="Pong game area"></canvas>
+      <div class="controls">
+        <button id="startButton" type="button">Start game</button>
+        <span id="gameStatus" role="status">Press Start game to play</span>
+      </div>
+    </section>
+  </main>
+  <script src="pong.js"></script>
+</body>
+</html>
